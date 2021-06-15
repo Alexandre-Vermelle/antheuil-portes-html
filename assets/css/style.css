@@ -1,0 +1,795 @@
+/************************************** CSS PRESENT SUR TOUTES LES PAGES *****************************************************************/
+
+/*GENERALITES*/
+
+.navbar-brand {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+#footer {
+  background-color: rgb(13, 48, 77);
+  color: white;
+  text-align: center;
+}
+
+#sitePresentation {
+  background-color: rgb(174, 212, 218);
+}
+
+#titlePresentation {
+  margin-top: 80px;
+}
+
+.logo {
+  border-radius: 10px;
+}
+
+.historyText {
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+.borderImage {
+  border: solid 1px black;
+}
+
+.img-fluid {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.img-fluid:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.generalTitle {
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(13, 48, 77);
+}
+
+/*GENERALITES*/
+
+/*TITRE - ANIMATION EN JAVASCRIPT*/
+
+.titleStyle {
+  min-height: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(13, 48, 77);
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  /* flex = propriété définissant la capacité d'un élément flexible à modifier ses dimensions afin de remplir l'espace disponible de son conteneur */
+  align-items: left;
+}
+
+#type-text {
+  height: 20px;
+}
+
+.blinking-cursor {
+  pointer-events: none;
+  user-select: none;
+  animation: blink 1s steps(2, start) infinite;
+  /* blink = clignotement */
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+/*FIN TITRE - ANIMATION EN JAVASCRIPT*/
+
+/*DEBUT PARALLAX 1*/
+
+.parallax {
+  /* Image utilisée */
+  background-image: url("mairie-antheuil.jpg");
+  /* Hauteur du parallax */
+  height: 300px;
+  /* Création de l'effet parallax en scrollant */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 70%;
+}
+
+/*FIN PARALLAX 1*/
+
+/*DEBUT PARALLAX 2*/
+
+.parallax2 {
+  /* Image utilisée */
+  background-image: url("landscape.jpg");
+  /* Hauteur du parallax */
+  height: 400px;
+  /* Création de l'effet parallax en scrollant */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 70%;
+}
+
+/*FIN PARALLAX 2*/
+
+/************************************** FIN CSS PRESENT SUR TOUTES LES PAGES **********************************************************************/
+
+/*********************************************** PAGE ACCUEIL *********************************************************************************/
+
+#cityPresentation {
+  background-color: white;
+}
+
+.mayorText {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: justify;
+}
+
+.mayorTextAlign {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: right;
+}
+
+/*CARROUSEL*/
+
+.carousel-item {
+  height: 270px;
+  /* Hauteur du carousel*/
+}
+
+.carousel-inner {
+  margin: auto;
+  text-align: center;
+  /* Structure globale du carrousel */
+}
+
+.cityNewsTitle {
+  font-size: 25px;
+  color: red;
+  font-weight: 600;
+}
+
+#cityNews {
+  text-align: center;
+  background-color: rgb(174, 212, 218);
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 350px;
+    text-align: center;
+  }
+}
+
+/*FIN CARROUSEL*/
+
+/* CARD EFFET NOIR ET BLANC */
+
+.card-text {
+  color: black
+}
+
+.card {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  /* grayscale = convertit une image en niveaux de gris */
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  /* ease-in-out : transition lente au départ et à la fin */
+}
+
+.card:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  /* grayscale = convertit une image en niveaux de gris */
+}
+
+.card-title1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card-deck {
+  padding-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .card-deck {
+    padding-bottom: 0px;
+  }
+}
+
+/* FIN CARD EFFET NOIR ET BLANC*/
+
+/*********************************************** FIN PAGE ACCUEIL *********************************************************************************/
+
+/************************************************** PAGE MAIRIE *********************************************************************************/
+
+.mayorPresentationBackgroundColor {
+  background-color: rgb(174, 212, 218);
+}
+
+/* CARROUSEL MAIRE + CONSEIL MUNICIPAL*/
+
+/* Couleur de fond du carrousel */
+
+.demo {
+  background: rgb(174, 212, 218);
+}
+
+/* Photo du membre du conseil municipal */
+
+.testimonial-councilMember .pic-councilMember {
+  width: 22%;
+  padding: 20px 0;
+  margin: 0 6% 0 2%;
+  float: left;
+  position: relative;
+  z-index: 1;
+}
+
+/* Carré bleu coté droit */
+
+.testimonial-councilMember .pic-councilMember:before {
+  content: "";
+  width: 130px;
+  height: 150px;
+  background: rgb(13, 48, 77);
+  position: absolute;
+  z-index: -1;
+}
+
+/* Carré bleu coté gauche */
+
+.testimonial-councilMember .pic-councilMember:after {
+  content: "";
+  width: 130px;
+  height: 150px;
+  background: rgb(13, 48, 77);
+  position: absolute;
+  z-index: -1;
+}
+
+/* Positionnement carré bleu coté droit */
+
+.testimonial-councilMember .pic-councilMember:before {
+  top: 0;
+  right: 78px;
+}
+
+/* Positionnement carré bleu coté gauche */
+
+.testimonial-councilMember .pic-councilMember:after {
+  bottom: 0;
+  left: -20px;
+}
+
+/* Bordure autour de l'image du membre du conseil municipal */
+
+.testimonial-councilMember .pic-councilMember img {
+  width: 60%;
+  height: auto;
+  border: 3px solid rgb(13, 48, 77);
+}
+
+/* Structure du texte de présentation du membre du conseil municipal */
+
+.testimonial-councilMember .testimonial-content-councilMember {
+  width: 70%;
+  height: 60%;
+  float: right;
+}
+
+/* Titre avec nom et prénom du membre du conseil municipal */
+
+.testimonial-councilMember .title {
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(13, 48, 77);
+  margin: 0;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-left: 15px;
+}
+
+/* Age et profession du membre du conseil municipal */
+
+.testimonial-councilMember .post {
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+  color: rgb(13, 48, 77);
+  text-transform: capitalize;
+  padding-left: 15px;
+}
+
+/* Texte de présentation du membre du conseil municipal */
+
+.testimonial-councilMember .description {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: rgb(13, 48, 77);
+  padding: 0 15px;
+  margin: 0;
+  position: relative;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 990px) {
+  /* Centrer tout le contenu du carrousel en format mobile */
+  .testimonial-councilMember {
+    text-align: center;
+  }
+  /* Réduction de la taille de la photo du membre en format mobile */
+  .testimonial-councilMember .pic-councilMember {
+    width: 200px;
+    margin: 0 auto;
+    float: none;
+  }
+  /* Réorganisation de la taille en hauteur et largeur des carrés bleus */
+  .testimonial-councilMember .pic-councilMember:before, .testimonial-councilMember .pic-councilMember:after {
+    width: 80px;
+    height: 100px;
+  }
+  /* Contenu du carrousel qui prend toute la largeur en format mobile */
+  .testimonial-councilMember .testimonial-content-councilMember {
+    width: 100%;
+    float: none;
+  }
+  /* Padding autour du titre avec le nom et le prénom */
+  .testimonial-councilMember .title {
+    padding: 15px 0 0 0;
+  }
+  /* Marge en bas du texte de présentation*/
+  .testimonial-councilMember .post {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  /* Réorganisation de la position du carré côté droit */
+  .testimonial-councilMember .pic-councilMember:before {
+    top: 0;
+    right: 25px;
+  }
+  /* Réorganisation de la position du carré côté gauche */
+  .testimonial-councilMember .pic-councilMember:after {
+    bottom: 0;
+    left: 25px;
+  }
+}
+
+/*FIN PRESENTATION MAIRE + CONSEIL MUNICIPAL*/
+
+/*********************************************** FIN PAGE MAIRIE *********************************************************************************/
+
+/*********************************************** PAGE TOURISME *********************************************************************************/
+
+/* Effets généraux sur la box qui vient en transition de la photo */
+
+.box {
+  background: linear-gradient(180deg, rgb(13, 48, 77) 0%, rgb(13, 48, 77) 100%);
+  font-family: 'Nanum Gothic', sans-serif;
+  border-radius: 25px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Affichage du texte avec les informations et les traits dynamiques */
+
+.box:before, .box:after, .box .box-content:before, .box .box-content:after {
+  content: "";
+  background: rgb(174, 212, 218);
+  width: 50%;
+  height: 4px;
+  transform: scaleX(0);
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 1;
+  transition: all 600ms ease;
+}
+
+/* Trait dynamique horizontale côté droit */
+
+.box:after {
+  top: auto;
+  bottom: 15px;
+  left: auto;
+  right: 15px;
+}
+
+/* Traits dynamiques verticaux côté droit et gauche */
+
+.box .box-content:before, .box .box-content:after {
+  width: 4px;
+  height: 50%;
+  transform: scaleY(0);
+}
+
+/* Trait dynamique verticale côté droit */
+
+.box .box-content:after {
+  left: auto;
+  right: 15px;
+  top: auto;
+  bottom: 15px;
+}
+
+/* Positionnement du trait dynamique et et de sa taille */
+
+.box:hover:before, .box:hover:after, .box:hover .box-content:before, .box:hover .box-content:after {
+  transform: scale(1);
+}
+
+/* Agrandissement de la photo */
+
+.box img {
+  width: 100%;
+  height: auto;
+  transform: scale3d(1.1, 1.1, 1);
+  /* transform: scale3d = permet d'agrandir ou de réduire l'échelle d'un élément dans un contexte 3D sur les trois axes de perspective (X,Y,Z), 1 = taille normale, <1 rétrécissement, >1 agrandissement */
+  transition: all 0.25s linear;
+  /* vitesse de transition de l'agrandissement ou de la réduction */
+}
+
+/* Opacité de la photo et transition agrandissement */
+
+.box:hover img {
+  opacity: 0.25;
+  transform: scale(1.25);
+}
+
+/* Format du contenu de la box avec le texte qui arrive au dessus de la photo */
+
+.box .inner-content {
+  color: rgb(174, 212, 218);
+  text-align: center;
+  width: 70%;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transition: all 600ms ease;
+}
+
+/* Opacité du texte et des icônes */
+
+.box:hover .inner-content {
+  opacity: 1;
+  top: 50%;
+}
+
+/* Format titre */
+
+.box .title {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 3px;
+}
+
+/* Format texte (distance) */
+
+.box .post {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 0 0 12px;
+  display: block;
+}
+
+/* Icône */
+
+.box .icon {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Icône */
+
+.box .icon li {
+  display: inline-block;
+  margin: 0 4px;
+}
+
+/* Icône avant */
+
+.box .icon li a {
+  color: rgb(174, 212, 218);
+  font-size: 18px;
+  line-height: 32px;
+  height: 35px;
+  width: 35px;
+  border: 2px solid rgb(174, 212, 218);
+  border-radius: 10px 0 10px 0;
+  display: block;
+  transition: all 0.3s;
+}
+
+/* Icône après */
+
+.box .icon li a:hover {
+  color: rgb(13, 48, 77);
+  background: rgb(174, 212, 218);
+  border-radius: 0 10px 0 10px;
+}
+
+@media only screen and (max-width:990px) {
+  .box {
+    margin: 0 0 30px;
+  }
+}
+
+.row, .pt-4, .py-4 {
+  padding: 0rem;
+}
+
+/*********************************************** FIN PAGE TOURISME *********************************************************************************/
+
+/**************************************************PAGE INFORMATIONS PRATIQUES *********************************************************************************/
+
+/*CARROUSELS INFORMATIONS PRATIQUES*/
+
+/*SLIDE MEDECINS*/
+
+/* Couleur de fond du carrousel */
+
+.demo {
+  background: rgb(174, 212, 218);
+}
+
+/* Photo du service*/
+
+.testimonial .pic {
+  width: 22%;
+  padding: 20px 0;
+  margin: 0 6% 0 2%;
+  float: left;
+  position: relative;
+  z-index: 1;
+}
+
+/* Carré bleu coté droit */
+
+.testimonial .pic:before {
+  content: "";
+  width: 130px;
+  height: 150px;
+  background: rgb(13, 48, 77);
+  position: absolute;
+  z-index: -1;
+}
+
+/* Carré bleu coté gauche */
+
+.testimonial .pic:after {
+  content: "";
+  width: 130px;
+  height: 150px;
+  background: rgb(13, 48, 77);
+  position: absolute;
+  z-index: -1;
+}
+
+/* Positionnement carré bleu coté droit */
+
+.testimonial .pic:before {
+  top: 20px;
+  right: -20px;
+}
+
+/* Positionnement carré bleu coté gauche */
+
+.testimonial .pic:after {
+  bottom: 0;
+  left: -20px;
+}
+
+/* Bordure autour de l'image du service */
+
+.testimonial .pic img {
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+  border: 3px solid rgb(13, 48, 77);
+}
+
+/* Structure du texte de présentation du service */
+
+.testimonial .testimonial-content {
+  width: 70%;
+  height: 60%;
+  float: right;
+}
+
+/* Titre avec nom du service */
+
+.testimonial .title {
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(13, 48, 77);
+  margin: 0;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-left: 15px;
+}
+
+/* Titre de la spécificité ou de la catégorie du service */
+
+.testimonial .post {
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+  color: rgb(13, 48, 77);
+  text-transform: capitalize;
+  padding-left: 15px;
+}
+
+/* Texte avec les informations du service (adresse, fermeture, doctolib) */
+
+.testimonial .description {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: rgb(13, 48, 77);
+  padding: 0 15px;
+  margin: 0;
+  position: relative;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 990px) {
+  /* Centrer tout le contenu du carrousel en format mobile */
+  .testimonial {
+    text-align: center;
+  }
+  /* Réduction de la taille de la photo du service */
+  .testimonial .pic {
+    width: 200px;
+    margin: 0 auto;
+    float: none;
+  }
+  /* Réorganisation de la taille en hauteur et largeur des carrés bleus */
+  .testimonial .pic:before, .testimonial .pic:after {
+    width: 80px;
+    height: 100px;
+  }
+  /* Contenu du carrousel qui prend toute la largeur en format mobile */
+  .testimonial .testimonial-content {
+    width: 100%;
+    float: none;
+  }
+  /* Padding autour du titre avec le nom du service */
+  .testimonial .title {
+    padding: 15px 0 0 0;
+  }
+  /* Marge en bas du texte de présentation */
+  .testimonial .post {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  /* Réorganisation de la position du carré côté droit */
+  .testimonial .pic:before {
+    top: 20px;
+    right: -20px;
+  }
+  /* Réorganisation de la position du carré côté gauche */
+  .testimonial .pic:after {
+    bottom: 0;
+    left: -18px;
+  }
+  /* Texte de présentation du service centré en format mobile */
+  .testimonial .description {
+    text-align: center;
+  }
+}
+
+/*FIN SLIDE MEDECINS*/
+
+/*FIN SLIDE MEDECINS*/
+
+/**************************************************FIN PAGE INFORMATIONS PRATIQUES *********************************************************************************/
+
+/*********************************************** PAGE CALENDRIER *********************************************************************************/
+
+/* Eléments généraux du calendrier centré */
+
+#calendar {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+/* Couleur des lignes du calendrier */
+
+table, th, thead, tbody, td {
+  border: solid 1px white;
+}
+
+/* Largeur du calendrier */
+
+table {
+  width: 80%;
+  text-align: right;
+  margin: auto;
+}
+
+/* Format des cellules du calendrier et de leur contenu */
+
+td {
+  width: 10%;
+  height: 100px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: rgb(174, 212, 218);
+  /*background-image: url("poubelle-dechets-menagers.png");*/
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: rgb(13, 48, 77);
+  text-shadow: 1px 1px white;
+}
+
+/* Format des cellules d'en tête du calendrier et de leur contenu */
+
+th {
+  background-color: rgb(13, 48, 77);
+  height: 75px;
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 1px rgb(126, 126, 126);
+}
+
+/* Pour centrer le texte dans les boutons de sélection du mois et de l'année */
+
+.list {
+  text-align: center;
+}
+
+/* Format des cellules qui ne contiendront pas de jour */
+
+.blank {
+  background-color: rgb(126, 126, 126);
+  background-image: url("blason.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Pour centrer les jours du calendrier */
+
+.calendarTextCenter {
+  text-align: center;
+}
+
+/*********************************************** FIN PAGE CALENDRIER *********************************************************************************/
+
+/*********************************************** PAGE CONTACT *********************************************************************************/
+
+.contactText {
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*********************************************** FIN PAGE CONTACT *********************************************************************************/
+
